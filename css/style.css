@@ -450,4 +450,3 @@ footer.site-footer{
 }
 .page-hero h1{ font-size: clamp(2rem, 3.4vw, 2.7rem); color:var(--white); position:relative; z-index:2; }
 .page-hero p{ color: rgba(255,255,255,0.72); margin-top: 14px; max-width: 52ch; position:relative; z-index:2; }
-
