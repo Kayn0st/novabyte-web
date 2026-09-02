@@ -440,6 +440,27 @@ footer.site-footer{
   .footer-grid{ grid-template-columns: 1fr; }
 }
 
+/* ---------- Process steps ---------- */
+.process-step{
+  display:grid;
+  grid-template-columns: 76px 1fr;
+  gap: 26px;
+  padding: 30px 0;
+  border-top: 1px solid var(--line);
+}
+.process-step:last-child{ border-bottom: 1px solid var(--line); }
+.process-num{
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--cyan);
+  -webkit-text-stroke: 1px var(--blue);
+}
+.process-step h3{ font-size: 1.2rem; margin-bottom: 8px; }
+.process-step p{ font-size: 0.98rem; max-width: 60ch; }
+@media (max-width: 640px){
+  .process-step{ grid-template-columns: 1fr; gap: 8px; }
+}
+
 /* Page hero (non-home) */
 .page-hero{
   background: var(--navy);
