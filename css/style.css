@@ -461,6 +461,83 @@ footer.site-footer{
   .process-step{ grid-template-columns: 1fr; gap: 8px; }
 }
 
+/* ---------- Pricing plans ---------- */
+.plans-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  align-items: start;
+}
+.plan-card{
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 30px 26px;
+  background: var(--white);
+}
+.plan-card.featured{
+  border: 2px solid var(--cyan);
+  box-shadow: 0 20px 50px -30px rgba(0,180,255,0.45);
+  position: relative;
+}
+.plan-badge{
+  display:inline-block;
+  background: var(--cyan);
+  color: var(--navy);
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+.plan-name{ font-size: 1.3rem; margin-bottom: 6px; }
+.plan-price{
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--blue);
+  margin-bottom: 4px;
+}
+.plan-price span{ font-size: 0.85rem; font-weight: 600; color: var(--ink-soft); }
+.plan-note{ font-size: 0.85rem; color: var(--ink-soft); margin-bottom: 22px; }
+.plan-features{ display:flex; flex-direction:column; gap: 12px; }
+.plan-features li{
+  display:flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.92rem;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.plan-features li:last-child{ border-bottom: none; padding-bottom: 0; }
+.plan-features .feat-label{ color: var(--ink-soft); }
+.plan-features .feat-value{ font-weight: 700; text-align: right; }
+.plan-features .feat-yes{ color: var(--blue); }
+.plan-features .feat-no{ color: var(--ink-soft); opacity: 0.5; }
+
+@media (max-width: 940px){
+  .plans-grid{ grid-template-columns: 1fr; }
+}
+
+.addons-table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.addons-table th{
+  text-align:left;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  font-weight: 700;
+  padding: 10px 14px;
+  border-bottom: 2px solid var(--line);
+}
+.addons-table td{
+  padding: 14px;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.98rem;
+}
+.addons-table td:last-child{ font-weight: 700; color: var(--blue); text-align:right; }
+.addons-table th:last-child{ text-align:right; }
+
 /* Page hero (non-home) */
 .page-hero{
   background: var(--navy);
